@@ -1,9 +1,21 @@
-tr{
+table {
+  border: 0.5px solid white;
+  background-color: gainsboro;
+  
+}
+
+th{
   background-color: black;
   color: white
 }
 
 th, td {
-  border: 1px solid white;
-  padding: 10px;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+}
+
+button{
+  background-color: blue;
+  border: none;
+  border-radius: 3px;
 }
