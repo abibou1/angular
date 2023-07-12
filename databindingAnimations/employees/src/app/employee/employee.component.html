@@ -8,4 +8,35 @@
     <th>Email</th>
     <th>Action</th>
   </tr>
+  <tr>
+    <td>
+      <p *ngIf="!showEdit">3</p>
+      <input *ngIf="showEdit" type="number" name="employeeID" placeholder="3">
+    </td>
+    <td>
+      <p *ngIf="!showEdit">Joseph</p>
+      <input *ngIf="showEdit" type="text" name="firstName" placeholder="Joseph">
+    </td>
+    <td>
+      <p *ngIf="!showEdit">Brown</p>
+      <input *ngIf="showEdit" type="text" name="lastName" placeholder="Brown">
+    </td>
+    <td>
+      <p *ngIf="!showEdit">20000</p>
+      <input *ngIf="showEdit" type="number" name="salary" placeholder="20000">
+    </td>
+    <td>
+      <p *ngIf="!showEdit">Thu Nov 02 1983 00:00:00 GMT+0530 (India Standard Time)</p>
+      <input *ngIf="showEdit" type="text" name="dob" placeholder="Thu Nov 02 1983 00:00:00 GMT+0530 (India Standard Time)">
+    </td>
+    <td>
+      <p *ngIf="!showEdit">joseph@abc.com</p>
+      <input *ngIf="showEdit" type="email" name="employeeEmail" placeholder="joseph@abc.com">
+    </td>
+    <td>
+      <button *ngIf="!showEdit" (click)="editEmp()">Edit</button>
+      <button *ngIf="showEdit"(click)="updateEmp()">Update</button>
+    </td>
+  </tr>
 </table>
+<p> value of {{ showEdit }}</p>
