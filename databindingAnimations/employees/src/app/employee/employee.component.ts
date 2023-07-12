@@ -23,30 +23,21 @@ export class EmployeeComponent {
         last_name: "Doe",
         salary: 21000,
         dob: "01/01/1999",
-        email: "john@ggmail.com",
+        email: "john@gmail.com",
         action: "submit"
 
       },
 
-      {
-        employee_id: 1,
-        first_name: "John",
-        last_name: "Doe",
-        salary: 21000,
-        dob: "01/01/1999",
-        email: "john@ggmail.com",
-        action: "submit"
-      },
-      {
-        employee_id: 2,
-        first_name: "Johnny",
-        last_name: "Dang",
-        salary: 30000,
-        dob: "01/01/1989",
-        email: "johnny@ggmail.com",
-        action: "submit"
+      // {
+      //   employee_id: 2,
+      //   first_name: "Johnny",
+      //   last_name: "Dang",
+      //   salary: 30000,
+      //   dob: "01/01/1989",
+      //   email: "johnny@ggmail.com",
+      //   action: "submit"
 
-      }
+      // }
     ]
   }
 

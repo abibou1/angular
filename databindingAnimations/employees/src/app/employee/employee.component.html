@@ -8,30 +8,30 @@
     <th>Email</th>
     <th>Action</th>
   </tr>
-  <tr>
+  <tr *ngFor = "let employee of employees">
     <td>
-      <p *ngIf="!showEdit">3</p>
-      <input *ngIf="showEdit" type="number" name="employeeID" placeholder="3">
+      <p *ngIf="!showEdit">{{ employee.employee_id }}</p>
+      <input *ngIf="showEdit" type="number" name="employeeID" value="{{ employee.employee_id }}">
     </td>
     <td>
-      <p *ngIf="!showEdit">Joseph</p>
-      <input *ngIf="showEdit" type="text" name="firstName" placeholder="Joseph">
+      <p *ngIf="!showEdit">{{ employee.first_name }}</p>
+      <input *ngIf="showEdit" type="text" name="firstName" value="{{ employee.first_name }}">
     </td>
     <td>
-      <p *ngIf="!showEdit">Brown</p>
-      <input *ngIf="showEdit" type="text" name="lastName" placeholder="Brown">
+      <p *ngIf="!showEdit">{{ employee.last_name }}</p>
+      <input *ngIf="showEdit" type="text" name="lastName" value="{{ employee.last_name}}">
     </td>
     <td>
-      <p *ngIf="!showEdit">20000</p>
-      <input *ngIf="showEdit" type="number" name="salary" placeholder="20000">
+      <p *ngIf="!showEdit">{{ employee.salary }}</p>
+      <input *ngIf="showEdit" type="number" name="salary" value="{{ employee.salary }}">
     </td>
     <td>
-      <p *ngIf="!showEdit">Thu Nov 02 1983 00:00:00 GMT+0530 (India Standard Time)</p>
-      <input *ngIf="showEdit" type="text" name="dob" placeholder="Thu Nov 02 1983 00:00:00 GMT+0530 (India Standard Time)">
+      <p *ngIf="!showEdit">{{ employee.dob }}</p>
+      <input *ngIf="showEdit" type="text" name="dob" value="{{ employee.dob }}">
     </td>
     <td>
-      <p *ngIf="!showEdit">joseph@abc.com</p>
-      <input *ngIf="showEdit" type="email" name="employeeEmail" placeholder="joseph@abc.com">
+      <p *ngIf="!showEdit">{{ employee.email }}</p>
+      <input *ngIf="showEdit" type="email" name="employeeEmail" value="{{ employee.email }}">
     </td>
     <td>
       <button *ngIf="!showEdit" (click)="editEmp()">Edit</button>
@@ -39,4 +39,3 @@
     </td>
   </tr>
 </table>
-<p> value of {{ showEdit }}</p>
