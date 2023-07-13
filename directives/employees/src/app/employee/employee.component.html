@@ -7,7 +7,7 @@
     <th>DOB</th>
     <th>Email</th>
   </tr>
-  <tr *ngFor = "let employee of emplist">
+  <tr defColOnEvent *ngFor = "let employee of emplist">
     <td>
       <p>{{ employee.employee_id }}</p>
     </td>
