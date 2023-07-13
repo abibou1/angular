@@ -6,36 +6,25 @@
     <th>Salary</th>
     <th>DOB</th>
     <th>Email</th>
-    <th>Action</th>
   </tr>
-  <tr *ngFor = "let employee of employees">
+  <tr *ngFor = "let employee of emplist">
     <td>
-      <p *ngIf="!showEdit">{{ employee.employee_id }}</p>
-      <input *ngIf="showEdit" type="number" name="employeeID" value="{{ employee.employee_id }}">
+      <p>{{ employee.employee_id }}</p>
     </td>
     <td>
-      <p *ngIf="!showEdit">{{ employee.first_name }}</p>
-      <input *ngIf="showEdit" type="text" name="firstName" value="{{ employee.first_name }}">
+      <p>{{ employee.first_name }}</p>
     </td>
     <td>
-      <p *ngIf="!showEdit">{{ employee.last_name }}</p>
-      <input *ngIf="showEdit" type="text" name="lastName" value="{{ employee.last_name}}">
+      <p>{{ employee.last_name }}</p>
     </td>
     <td>
-      <p *ngIf="!showEdit">{{ employee.salary }}</p>
-      <input *ngIf="showEdit" type="number" name="salary" value="{{ employee.salary }}">
+      <p>{{ employee.salary }}</p>
     </td>
     <td>
-      <p *ngIf="!showEdit">{{ employee.dob }}</p>
-      <input *ngIf="showEdit" type="text" name="dob" value="{{ employee.dob }}">
+      <p>{{ employee.dob }}</p>
     </td>
     <td>
-      <p *ngIf="!showEdit">{{ employee.email }}</p>
-      <input *ngIf="showEdit" type="email" name="employeeEmail" value="{{ employee.email }}">
-    </td>
-    <td>
-      <button *ngIf="!showEdit" (click)="editEmp()">Edit</button>
-      <button *ngIf="showEdit"(click)="updateEmp()">Update</button>
+      <p>{{ employee.email }}</p>
     </td>
   </tr>
 </table>

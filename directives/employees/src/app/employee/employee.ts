@@ -4,6 +4,5 @@ export interface Employee {
   last_name: string,
   salary: number,
   dob: string,
-  email: string,
-  action: string
+  email: string
 }
