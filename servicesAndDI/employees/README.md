@@ -1,6 +1,6 @@
 # Employees
 
-![Alt text](employeespage.png)
+![Alt text](serviceAndDI.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
