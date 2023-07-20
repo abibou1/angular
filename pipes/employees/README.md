@@ -1,6 +1,6 @@
 # Employees
 
-![Alt text](mouseoverDirectives.png)
+![Alt text](currencyDatePipe.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 

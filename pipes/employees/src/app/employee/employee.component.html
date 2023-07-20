@@ -18,10 +18,10 @@
       <p>{{ employee.last_name }}</p>
     </td>
     <td>
-      <p>{{ employee.salary }}</p>
+      <p>{{ employee.salary | currency }}</p>
     </td>
     <td>
-      <p>{{ employee.dob }}</p>
+      <p>{{ employee.dob | date: 'dd/MM/YYYY' }}</p>
     </td>
     <td>
       <p>{{ employee.email }}</p>
