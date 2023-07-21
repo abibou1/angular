@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NewemployeeComponent } from './newemployee/newemployee.component';
+import { NewemployeeService } from './services/newemployee.service';
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,9 +12,10 @@ import { NewemployeeComponent } from './newemployee/newemployee.component';
     NewemployeeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NewemployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
