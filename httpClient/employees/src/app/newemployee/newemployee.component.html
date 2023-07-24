@@ -5,18 +5,18 @@
     <th>Salary</th>
     <th>Age</th>
   </tr>
-  <tr *ngFor = "let newemployee in newemployeeData">
+  <tr *ngFor = "let newemployee of newemployees">
     <td>
       <p> {{ newemployee.id }} </p>
     </td>
     <td>
-      <p> {{ newemployee.name }} </p>
+      <p> {{ newemployee.employee_name }} </p>
     </td>
     <td>
-      <p> {{ newemployee.salary }} </p>
+      <p> {{ newemployee.employee_salary }} </p>
     </td>
     <td>
-      <p> {{ newemployee.age }} </p>
+      <p> {{ newemployee.employee_age }} </p>
     </td>
   </tr>
 </table>

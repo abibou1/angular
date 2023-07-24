@@ -2,19 +2,19 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 // import 'rxjs/Rx';
 import { Observable } from 'rxjs';
+import { Employee2 } from '../employee2';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewemployeeService {
-  url : string;
+  // private url : string = "http://dummy.restapiexample.com/api/v1/employees";
+  private url : string = "/../../assets/data/newemployee.json"
 
-  constructor(private http: HttpClient) {
-    this.url = 'http://dummy.restapiexample.com/api/v1/employees';
-  }
+  constructor(private http: HttpClient) { }
 
-  getNewemployeeInfo(): Observable<any> {
+  getNewemployeeInfo(): Observable<Employee2[]> {
 
-    return this.http.get(this.url);
+    return this.http.get<Employee2[]>(this.url);
   }
 }
