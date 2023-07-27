@@ -8,7 +8,7 @@ import { Employee2 } from '../employee2';
   providedIn: 'root'
 })
 export class NewemployeeService {
-  // private url : string = "http://dummy.restapiexample.com/api/v1/employees";
+  //private url : string = "http://dummy.restapiexample.com/api/v1/employees";
   private url : string = "/../../assets/data/newemployee.json"
 
   constructor(private http: HttpClient) { }

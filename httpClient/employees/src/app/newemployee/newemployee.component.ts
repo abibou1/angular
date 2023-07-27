@@ -9,6 +9,7 @@ import { Employee2 } from '../employee2';
 })
 export class NewemployeeComponent implements OnInit {
   public newemployees: Employee2[]=[];
+  // public apiResponse: {status: "", data: Employee2[]};
   errorMessage: string = "this is a error message" ;
 
   constructor(private _newemployeeService: NewemployeeService) {}
@@ -17,7 +18,10 @@ export class NewemployeeComponent implements OnInit {
 
     this._newemployeeService.getNewemployeeInfo()
       .subscribe(data => this.newemployees=data);
+    // this._newemployeeService.getNewemployeeInfo()
+    //   .subscribe(data => this.apiResponse=data);
     
     //.subscribe(data => { this.newemployeeData = data, console.log(this.newemployeeData), this.errorMessage });
   }
+  // this.newemployees = this.apiResponse;
 }

@@ -17,5 +17,7 @@ export class AppComponent {
 
     this._newEmployeeService.getNewemployeeInfo()
     .subscribe(data => this.newemployees=data);
+
+    console.log(this.newemployees);
   }
 }
