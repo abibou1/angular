@@ -18,10 +18,5 @@ export class NewemployeeComponent implements OnInit {
 
     this._newemployeeService.getNewemployeeInfo()
       .subscribe(data => this.newemployees=data);
-    // this._newemployeeService.getNewemployeeInfo()
-    //   .subscribe(data => this.apiResponse=data);
-    
-    //.subscribe(data => { this.newemployeeData = data, console.log(this.newemployeeData), this.errorMessage });
   }
-  // this.newemployees = this.apiResponse;
 }
