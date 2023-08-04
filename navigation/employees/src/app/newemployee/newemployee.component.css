@@ -1,0 +1,13 @@
+tr{
+  background-color: rgb(48, 43, 43);
+  color: white
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
